@@ -1,0 +1,26 @@
+@media(max-width: 350px) {
+
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .balance {
+        font-size: 14px;
+    }
+
+    .creator {
+        font-size: 12px;
+    }
+
+    .creator span {
+        padding: 0 10px;
+    }
+}
