@@ -23,15 +23,50 @@ body {
     border-radius: 15px;
 }
 
+.photo {
+    position: relative;
+}
+
 .photo img {
     width: 100%;
     border-radius: 10px;
+}
+
+.photo .icon-view-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    border-radius: 10px;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.photo .icon-view-container:hover {
+    opacity: 1;
+}
+
+/* Place 'icon-view' over the .photo */
+.photo .icon-view {
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    width: 50px;
 }
 
 h1 {
     color: white;
     font-weight: 600;
     font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: var(--cyan);
 }
 
 p {
@@ -94,6 +129,12 @@ hr {
 .creator span a {
     color: white;
     font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.creator span a:hover{
+    color: var(--cyan);
 }
 
 footer {
