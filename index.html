@@ -8,7 +8,6 @@
   
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,18 +15,38 @@
 </head>
 <body>
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+  <main>
+    <div class="card">
+      <div class="photo">
+        <img src="./images/image-equilibrium.jpg" alt="Equilibrium image">
+      </div>
+      <div class="lower">
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="assets">
+          <div class="balance">
+            <img src="./images/icon-ethereum.svg" aria-hidden="true">
+            <span>0.041 ETH</span>
+          </div>
+          <div class="time">
+            <img src="./images/icon-clock.svg" aria-hidden="true">
+            <span>3 days left</span>
+          </div>
+        </div>
+        <hr>
+        <div class="creator">
+          <div class="pfp">
+            <img src="./images/image-avatar.png" alt="Avatar image">
+          </div>
+          <span>Creation of Jules Wyvern</span>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.linkedin.com/in/fernando-vald%C3%A9s-garc%C3%ADa-a46142221/">Fernando Valdés García</a>.
   </div>
 </body>
 </html>
